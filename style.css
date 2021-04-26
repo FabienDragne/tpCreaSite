@@ -1,0 +1,188 @@
+/*===============================================================================
+
+                                    CSS général      
+
+================================================================================*/
+
+html *{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: linear-gradient(#CCDAE0, #EDF2F4);
+    align-items: center;     /* trouvé sur la navbar youtube */
+    height: 100%;
+    font-family: Helvetica;
+
+    padding-left: 7.5%;
+    padding-right: 7.5%;
+}
+
+
+/*===============================================================================
+
+                                    Structure    
+
+================================================================================*/
+
+header{
+    position: relative;
+    top: 0; 
+    left: 0;
+    /* height:100%; */          /* height ne semble réagir qu'aux valeurs en px dans cette configuration */
+    width: 100%;
+    background-color: #2B2D42;
+    
+}
+    header img:first-child{
+        border-bottom: solid #D90429;
+        width: 100%;
+        height: auto;
+        object-fit: cover;   
+    }
+    header div:first-child{
+        display:inline-block;
+        border-bottom: solid #D90429;
+    }
+        header h1:first-child{              /* https://www.xul.fr/css/texte-sur-image.php */
+            text-align: center;
+            color:#EF233C;
+            font-size: 50px;
+            font-weight: bold;              /* Impact ne semble pas supporter le bold */
+            font-family: impact;
+        }
+    nav{
+        background-color:#2B2D42;
+        position:sticky;
+        top:0;
+        left:0;
+        width: auto;
+        height: auto;
+        border-top: solid #D90429;
+        border-bottom: solid #D90429;
+        font-family: Impact;
+        font-size: 25px;
+    }
+        nav ul:nth-of-type(1n){
+                list-style-type: none;
+                text-align: center;
+            }
+        nav li:nth-of-type(1n){
+                display: inline-block;
+                padding:0.5%;
+                margin-right:2%;
+                margin-left:2%;
+            }
+        nav a{
+                color: #D90429;
+                text-decoration: none;
+            }
+        nav a:visited{ 
+                color: grey;
+            }
+        nav a:hover{
+            color: #2B2D42;
+            background-color: #ffffff75;
+        }
+
+footer{
+    top: 60%;
+    right: 0;
+
+    width: 4%;
+
+    margin-right: 2%;
+    position: fixed;
+}
+    footer ul:nth-of-type(1n){
+        list-style-type: none;
+    }
+
+/*===============================================================================
+
+                                    article      
+
+================================================================================*/
+
+article{
+    margin-top: 1%;
+    margin-bottom: 1%;
+    background-color: #2B2D4275;
+    border: solid 1px black;
+    min-height: 200px;
+}
+    article h3:nth-of-type(1n){
+        text-decoration: underline dashed;
+        margin: 1%;
+        font-family: Impact;
+        color: #2B2D42;
+    }
+    article p:nth-of-type(1n){
+        margin: 1%;
+        text-align:justify;
+        color:#e0e4eb;
+    }
+    article aside:nth-of-type(1n){
+        left: 500px;
+        text-align:justify;
+        color:#8D99AE;
+    }
+    article img:nth-child(2n+1){
+        float: left;
+        margin-right: 1%;
+    }
+
+/* Je désirais copier un menu latéral vu sur un site, mais devant la complexité de l'élément
+j'ai du revoir mes aspirations à la baisse.
+J'ai néanmoins fait la connaissance des éléments top/bottom/right/left
+
+/* https://developer.mozilla.org/fr/docs/Web/HTML/Element/nav */
+/* https://developer.mozilla.org/fr/docs/Web/CSS/position */
+
+/*===============================================================================
+
+                                    Formulaire     
+
+================================================================================*/
+
+form{
+    margin: 5% 0%;
+}
+
+/* https://stackoverflow.com/questions/46229876/custom-border-for-a-fieldset-and-legend */
+
+
+fieldset{
+    border: none;
+}
+
+legend{
+    font-family: Impact;
+    color: #D90429;
+    font-size: x-large;
+    text-align: center;
+}
+
+#name, #email, #commentaire{
+    display: block;
+    text-align: center;
+}
+
+
+
+/* label:nth-child(1){
+    display: inline-block;
+    text-align: left;
+    clear: left;
+    
+    text-align: right;
+} */
+
+
+
+/*===============================================================================
+
+                                    Gallerie     
+
+================================================================================*/
+
