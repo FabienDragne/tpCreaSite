@@ -170,19 +170,17 @@ legend{
 
 
 
-/* label:nth-child(1){
-    display: inline-block;
-    text-align: left;
-    clear: left;
-    
-    text-align: right;
-} */
-
-
-
 /*===============================================================================
 
                                     Gallerie     
 
 ================================================================================*/
 
+/* Honteusement piquée en catastrophe sur https://www.xul.fr/css/galerie-deroulante.php */
+
+#gallery{
+    border: none;
+    margin: 3% 0;
+    height: 520px;
+    width: 100%;
+}
