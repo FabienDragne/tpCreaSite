@@ -181,6 +181,10 @@ legend{
 #gallery{
     border: none;
     margin: 3% 0;
-    height: 520px;
+    height: 523px;
     width: 100%;
+
+    /* pour une raison que j'ignore, le passage sur github page nécessite cet ajout */
+    min-height: 523px;
+    min-width: 100%;
 }
